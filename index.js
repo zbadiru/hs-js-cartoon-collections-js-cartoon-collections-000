@@ -7,28 +7,36 @@ function dwarfRollCall(dwarves) {
 }
 
 function summonCaptainPlanet(planeteerCalls){
-let result = []
+let calls = []
+// for (var = i; i < planeteerCalls.length; i++)
 planeteerCalls.forEach(function(element){
 element = element.toUpperCase() +"!"
-result.push(element)
+// calls.push(planeteerCalls[i] + "!")
+calls.push(element)
 })
-return result
+return calls
 }
 
 function longPlaneteerCalls(words) {
-  let flag = false
+  let hasLongwords = false
+  // you can also use
+  // for (var i = 0; i < words.length; i++) {
+  //if (words[i].length > 4) {
   words.forEach(function(word) {
     if(word.length > 4){
-    flag = true
+    hasLongwords = true
   }
 })
-return flag
+return hasLongwords
 }
+
 function findTheCheese (foods) {
   let cheese = ["camembert", "cheddar", "gouda"]
   for (let i = 0; i < foods.length; i++) {
+    // for (var j = 0; j < cheeses.lengthl j++) {
     let cheeseIdx = cheese.indexOf(foods [i])
     if (cheeseIdx !== -1){
+      // if (cheeses[j] === foods[i]) {
       return foods[i]
       }
     }
