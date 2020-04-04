@@ -1,9 +1,9 @@
 function dwarfRollCall(dwarves) {
-  let rollcall = ""
+  let NumDwarves = ''
   for (let i=0; i < dwarves.length; i++){
-    rollcall += `${i+1}. ${dwarves[i]} `
+    NumDwarves += `${i+1}. ${dwarves[i]} `
   }
-  return(rollcall)
+  return(NumDwarves)
 }
 function summonCaptainPlanet(planeteerCalls){
 let calls = []
@@ -21,8 +21,8 @@ function longPlaneteerCalls(words) {
   // you can also use
   // for (var i = 0; i < words.length; i++) {
   //if (words[i].length > 4) {
-  words.forEach(function(words) {
-    if(words.length > 4){
+  words.forEach(function(word) {
+    if(word.length > 4){
     hasLongwords = true
   }
 })
